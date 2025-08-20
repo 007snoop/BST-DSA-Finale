@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Enter Numbers</title>
+</head>
+<body>
+<h1>Enter Numbers for BST</h1>
+<form method="post" th:action="@{/process-numbers}">
+    <label>
+        <input type="text" name="numbers" placeholder="e.g. 5,3,7,2,4" required/>
+    </label>
+    <button type="submit">Submit</button>
+</form>
+<form th:action="@{/previous-trees}" method="get">
+    <button type="submit">Show Previous</button>
+</form>
+</body>
+</html>

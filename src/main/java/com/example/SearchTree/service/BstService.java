@@ -30,7 +30,7 @@ public class BstService {
         return root;
     }
 
-    private Node buildBST(int[] numbers) {
+    public Node buildBST(int[] numbers) {
         Node root = null;
         for (int i : numbers) root = insert(root, i);
         return root;
